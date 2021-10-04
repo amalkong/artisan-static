@@ -9,8 +9,7 @@
         <img src="{{ $page->image }}" style="object-fit: cover; height: 250px; width: 100%;">
     @endif
 
-    <p class="post-date">
-		<i class="fa fa-calendar"></i>
+    <p>
         <strong>{{ $page->prettyDate('F j, Y') }}</strong><br>
         @foreach ($page->tags as $tag)
             <a href="/tags/{{ $tag }}">{{ $tag }}</a>
@@ -24,9 +23,7 @@
 
     <hr>
 
-    <p>DISCLAIMER: Any 3rd-party services in these posts and in the config are only recommendations/suggestions. I am not affiliated with any of them.</p>
-
-    @yield('postContent')
+    @yield('projectContent')
 
     <hr>
 

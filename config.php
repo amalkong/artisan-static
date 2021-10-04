@@ -5,7 +5,7 @@ return [
     'baseUrl' => 'https://artisanstatic.netlify.app',
     'site' => [
         'title' => 'AKD Showcase',
-        'description' => 'Amalkong Development project showcase and blog.',
+        'description' => 'Amalkong Development Projects showcase and blog.',
         'image' => 'default-share.png',
     ],
     'owner' => [
@@ -14,10 +14,11 @@ return [
     'links' => [
         'twitter' => 'https://twitter.com/amalkong',
         'github' => 'https://github.com/amalkong',
+        'stackoverflow' => 'https://stackoverflow.com/users/15254982/amalkong',
     ],
     'services' => [
         'cmsVersion' => '~2.10',
-        'analytics' => 'UA-XXXXX-Y',
+        'analytics' => 'G-G9P2RYX3P9',
         'disqus' => 'artisanstatic',
         'formcarry' => 'XXXXXXXXXXXX',
         'cloudinary' => [
@@ -47,6 +48,21 @@ return [
             'section' => '',
             'name' => function ($page) {
                 return $page->getFilename();
+            },
+        ],
+		'projects' => [
+            'path' => 'projects/{filename}',
+            'sort' => '-date',
+            'extends' => '_layouts.project',
+            'section' => 'projectContent',
+            'isPost' => false,
+            'comments' => false,
+            'tags' => [],
+            'hasTag' => function ($page, $tag) {
+                return collect($page->tags)->contains($tag);
+            },
+            'prettyDate' => function ($page, $format = 'M j, Y') {
+                return date($format, $page->date);
             },
         ],
     ],

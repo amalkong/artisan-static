@@ -3,23 +3,26 @@
 @section('title', 'About')
 
 @section('content')
-    <h1>About</h1>
+    <h2>About</h2>
 
-    <p>My name is {{ $page->owner->name }}</p>
+    <p>My name is {{ $page->owner->name }}, a web developer from the island of Jamaica.</p>
     
-    <p>This is a showcase for all my projects outeside of github</p>
+    <p>This is a showcase for all <a href="https://github.com/amalkong">my projects</a> outside of github.</p>
     
-    <h2>Project List:</h2>
+	<div class="panel">
+		<h3>Project List:</h3>
+		<ul>
+			<li><a href="https://github.com/amalkong/css-filter">Css Filter Repo</a> - <a href="https://amalkong.github.io/css-filter/" target="_blank">demo</a></li>
+		</ul>
+	</div>
     
-    <ul>
-        <li><a href="https://amalkong.github.io/css-filter/">Css Filter</a></li>
-    </ul>
-    
-    <h2>Links:</h2>
-
-    <ul>
-        <li><a href="https://twitter.com/amalkong" target="_blank">Twitter</a></li>
-        <li><a href="https://github.com/amalkong" target="_blank">GitHub</a></li>
-        <li><a href="https://stackoverflow.com/users/15254982/amalkong" target="_blank">Stack Overflow</a></li>
-    </ul>
+	
+    <div class="panel">
+		<h3>Links:</h3>
+		<ul>
+			<li><a href="{{ $page->links->twitter }}" title="view twitter profile" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+			<li><a href="{{ $page->links->github }}" title="view github profile" target="_blank"><i class="fa fa-github"></i><span>GitHub</span></a></li>
+			<li><a href="{{ $page->links->stackoverflow }}" title="view stack-overflow profile" target="_blank"><i class="fa fa-stack-overflow"></i><span>Stack Overflow</span></a></li>
+		</ul>
+	</div>
 @endsection

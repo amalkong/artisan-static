@@ -1,18 +1,55 @@
+:root{
+	--primary-clr:#d9d9d9;
+	--secondary-clr:#0a8eac;
+	--neutral-clr:#fff;
+}
 // Tacit - CSS Framework for Dummies, Without Classes
 @import url('https://unpkg.com/tacit-css@1.5.5/dist/tacit-css-1.5.5.min.css');
 
 @import "~highlight.js/scss/a11y-dark";
 @import "~notyf/notyf.min";
 
-section h1:first-child {
-    margin-top: 18px;
-}
 
-button[data-sharer] {
-    color: #fff;
-}
+body{font-family: 'Varela Round', "Barlow", "Source Sans Pro", "Segoe UI", sans-serif;text-rendering: optimizeLegibility;}
+p {color: #777;}
+hr{border-color: var(--primary-clr);}
+button[data-sharer] {color: #fff;}
+a,::marker{transition: all 0.5s ease;}
+a.fancy-anchor {position: relative;text-decoration: none;/*color: #ffd60ab0*/;}
+/*a.fancy-anchor:hover,a.fancy-anchor:focus {color: #ffd60a;}*/
+a.fancy-anchor::before{content: "";position: absolute;left: 0;top: 98%;width: 100%;height: 2px;background: #ffe681;transform-origin: right;transform: scaleX(0);transition: transform 350ms ease-in;}
+a.fancy-anchor:hover::before,a.fancy-anchor:focus::before {transform: scaleX(1);transform-origin: left;}
+li a{display: block;text-decoration:none;}
+header, footer {background-color: var(--primary-clr);}
+article, header, footer {padding: 2.5rem;}
+header{position:relative;/*background-image:url(../img/home-banner.jpg);*/background-repeat:no-repeat;border: 1px solid #d9d9d9;}
+header ul {position:absolute;top:0;right:0;list-style:none;background-color:#acabab;}
+header ul li{display:inline-flex;}
+header ul li a {color:var(--neutral-clr);display:block;padding:0.25rem 0.5rem;}
+header ul li a:hover{background-color:var(--secondary-clr);text-decoration:none;}
+nav {background-color:var(--secondary-clr);}
+nav ul{margin:0;}
+nav ul li{margin:0;}
+nav ul li a {color:var(--neutral-clr);padding:0.25rem 0.5rem;}
+nav ul li a:hover {color:var(--secondary-clr);background-color:var(--neutral-clr);text-decoration:none;}
 
-.test-css {
-    padding: 5px;
-    border: 2px solid blue;
+section h1:first-child {margin-top: 18px;}
+
+.test-css {padding: 5px;border: 2px solid blue;}
+.heading {background-color: rgba(0,0,0,0.3);padding: 1rem;color: var(--neutral-clr);}
+.panel {padding: 1rem;background-color: #ddd;margin-bottom: 1.5rem;border-radius: 4px;}
+.panel h3 {margin: auto;font-size: 1.5rem;color: #444;}
+.panel ul {list-style-type: square;}
+.panel li::marker {color: #777;}
+
+.post-date {
+    display: flex;
+    align-items: center;
+}
+.post-date > i{margin-right:5px;font-size: 80%;}
+
+@media (max-width:767px) {
+	body,pre{padding: 0;}
+	article, footer {padding: 0.75rem;}
+	header{padding: 1.5rem;}
 }

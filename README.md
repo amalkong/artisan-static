@@ -42,7 +42,7 @@ This button will do the following:
 
 Accept the invite, set your password, then navigate to `/admin` on your site to log in.
 
-Now you're all set, and you can start customizing your static site!
+Now you're all set, and you can start customizing your static site/s!
 
 ___
 ## Local development
