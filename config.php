@@ -4,16 +4,16 @@ return [
     'production' => false,
     'baseUrl' => 'https://artisanstatic.netlify.app',
     'site' => [
-        'title' => 'My Jigsaw Blog',
-        'description' => 'Personal blog of John Doe.',
+        'title' => 'AKD Showcase',
+        'description' => 'Amalkong Development project showcase and blog.',
         'image' => 'default-share.png',
     ],
     'owner' => [
-        'name' => 'John Doe',
+        'name' => 'Amalkong',
     ],
     'links' => [
-        'twitter' => 'https://twitter.com/johndoe',
-        'github' => 'https://github.com/johndoe',
+        'twitter' => 'https://twitter.com/amalkong',
+        'github' => 'https://github.com/amalkong',
     ],
     'services' => [
         'cmsVersion' => '~2.10',
