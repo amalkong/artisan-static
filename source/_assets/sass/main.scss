@@ -22,7 +22,7 @@ a.fancy-anchor:hover::before,a.fancy-anchor:focus::before {transform: scaleX(1);
 li a{display: block;text-decoration:none;}
 header, footer {background-color: var(--primary-clr);}
 article, header, footer {padding: 2.5rem;}
-header{position:relative;/*background-image:url(../img/home-banner.jpg);*/background-repeat:no-repeat;border: 1px solid #d9d9d9;}
+header{position:relative;background-image:url(https://loremflickr.com/400/600/landscape);background-repeat:no-repeat;border: 1px solid #d9d9d9;}
 header ul {position:absolute;top:0;right:0;list-style:none;background-color:#acabab;}
 header ul li{display:inline-flex;}
 header ul li a {color:var(--neutral-clr);display:block;padding:0.25rem 0.5rem;}
