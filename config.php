@@ -29,7 +29,7 @@ return [
     'collections' => [
         'posts' => [
             'path' => 'posts/{filename}',
-            'sort' => '-date',
+            'sort' => 'date',
             'extends' => '_layouts.post',
             'section' => 'postContent',
             'isPost' => true,
