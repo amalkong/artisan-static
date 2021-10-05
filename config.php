@@ -50,9 +50,9 @@ return [
                 return $page->getFilename();
             },
         ],
-		'projects' => [
+        'projects' => [
             'path' => 'projects/{filename}',
-            'sort' => '-date',
+            'sort' => 'date',
             'extends' => '_layouts.project',
             'section' => 'projectContent',
             'isPost' => false,
