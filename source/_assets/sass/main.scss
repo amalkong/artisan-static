@@ -22,7 +22,7 @@ a.fancy-anchor:hover::before,a.fancy-anchor:focus::before {transform: scaleX(1);
 li a{display: block;text-decoration:none;}
 header, footer {background-color: var(--primary-clr);}
 article, header, footer {padding: 2.5rem;}
-header{position:relative;background-image:url(https://res.cloudinary.com/amalkong/image/upload/v1633478734/home-banner_ulrwns.jpg);background-repeat:no-repeat;background-attachment:fixed;border: 1px solid #d9d9d9;}
+header{position:relative;background-image:url(https://res.cloudinary.com/amalkong/image/upload/v1633478734/home-banner_ulrwns.jpg);background-repeat:no-repeat;background-size:contain;background-attachment:fixed;border: 1px solid #d9d9d9;}
 header h1{background-color: rgba(0,0,0,0.4);text-shadow: -1px 0px 1px #d9d9d980;}
 header ul {position:absolute;top:0;right:0;list-style:none;background-color:#acabab;}
 header ul li{display:inline-flex;}
