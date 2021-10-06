@@ -22,8 +22,8 @@ a.fancy-anchor:hover::before,a.fancy-anchor:focus::before {transform: scaleX(1);
 li a{display: block;text-decoration:none;}
 header, footer {background-color: var(--primary-clr);}
 article, header, footer {padding: 2.5rem;}
-header{position:relative;background-image:url(https://res.cloudinary.com/amalkong/image/upload/v1633478734/home-banner_ulrwns.jpg);background-repeat:no-repeat;border: 1px solid #d9d9d9;}
-header h1{background-color: rgba(0,0,0,0.4);text-shadow:2px 2px 3px rgba(0,0,0,0.5);}
+header{position:relative;background-image:url(https://res.cloudinary.com/amalkong/image/upload/v1633478734/home-banner_ulrwns.jpg);background-repeat:no-repeat;background-attachment:fixed;border: 1px solid #d9d9d9;}
+header h1{background-color: rgba(0,0,0,0.4);text-shadow: -1px 0px 1px #d9d9d980;}
 header ul {position:absolute;top:0;right:0;list-style:none;background-color:#acabab;}
 header ul li{display:inline-flex;}
 header ul li a {color:var(--neutral-clr);display:block;padding:0.25rem 0.5rem;}
@@ -36,12 +36,17 @@ nav ul li a:hover,nav ul li a.selected {color:var(--secondary-clr);background-co
 
 section h1:first-child {margin-top: 18px;}
 
+footer{border-top: 2px solid #0a8eac;}
+
 .test-css {padding: 5px;border: 2px solid blue;}
 .heading {background-color: rgba(0,0,0,0.3);padding: 1rem;color: var(--neutral-clr);}
 .panel {padding: 1rem;background-color: #ddd;margin-bottom: 1.5rem;border-radius: 4px;}
 .panel h3 {margin: auto;font-size: 1.5rem;color: #444;}
 .panel ul {list-style-type: square;}
 .panel li::marker {color: #777;}
+
+.panel ul li a {display: inline-flex;align-items: center;}
+.panel ul li a > i {margin-right: 5px;}
 
 .post-date {
     display: flex;
