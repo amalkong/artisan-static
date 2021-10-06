@@ -28,12 +28,12 @@ header ul {position:absolute;top:0;right:0;list-style:none;background-color:#aca
 header ul li{display:inline-flex;}
 header ul li a {color:var(--neutral-clr);display:block;padding:0.25rem 0.5rem;}
 header ul li a:hover{background-color:var(--secondary-clr);text-decoration:none;}
+.main-nav{position:sticky;top:0;}
 nav {background-color:var(--secondary-clr);}
 nav ul{margin:0;}
 nav ul li{margin:0;}
 nav ul li a {color:var(--neutral-clr);padding:0.25rem 0.5rem;}
 nav ul li a:hover,nav ul li a.selected {color:var(--secondary-clr);background-color:var(--neutral-clr);text-decoration:none;}
-
 section h1:first-child {margin-top: 18px;}
 
 footer{border-top: 2px solid #0a8eac;}

@@ -1,4 +1,4 @@
-			<nav>
+			<nav class="main-nav">
 				<ul>
 					<li><a class="fancy-anchor {{ $page->selected('home') }}" href="/">Home</a></li>
 					<li><a class="fancy-anchor {{ $page->selected('about') }}" href="{{ $page->baseUrl }}/about">About</a></li>
