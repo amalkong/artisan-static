@@ -1,8 +1,11 @@
 <?php
 
+use Illuminate\Support\Str;
+
 return [
     'production' => false,
-    'baseUrl' => 'https://artisanstatic.netlify.app',
+    //'baseUrl' => 'https://artisanstatic.netlify.app',
+    'baseUrl' => 'https://akd-showcase.netlify.app',
     'site' => [
         'title' => 'AKD Showcase',
         'description' => 'Amalkong Development Projects showcase and blog.',
@@ -21,9 +24,13 @@ return [
         'analytics' => 'G-G9P2RYX3P9',
         'disqus' => 'artisanstatic',
         'formcarry' => 'XXXXXXXXXXXX',
-        'cloudinary' => [
+        /* 'cloudinary' => [
             'cloudName' => 'artisanstatic',
             'apiKey' => '365895137117119',
+        ], */
+		'cloudinary' => [
+            'cloudName' => 'amalkong',
+            'apiKey' => '463644446943241',
         ],
     ],
     'collections' => [
@@ -66,4 +73,7 @@ return [
             },
         ],
     ],
+	'selected' => function ($page, $section) {
+        return Str::contains($page->getPath(), $section) ? 'selected' : '';
+    },
 ];

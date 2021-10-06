@@ -32,7 +32,7 @@ nav {background-color:var(--secondary-clr);}
 nav ul{margin:0;}
 nav ul li{margin:0;}
 nav ul li a {color:var(--neutral-clr);padding:0.25rem 0.5rem;}
-nav ul li a:hover {color:var(--secondary-clr);background-color:var(--neutral-clr);text-decoration:none;}
+nav ul li a:hover,nav ul li a.selected {color:var(--secondary-clr);background-color:var(--neutral-clr);text-decoration:none;}
 
 section h1:first-child {margin-top: 18px;}
 

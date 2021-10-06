@@ -30,15 +30,9 @@
 				</ul>
 				<h1>{{ $page->site->title }}</h1>
 			</header>
-			<nav>
-				<ul>
-					<li><a class="fancy-anchor" href="/">Home</a></li>
-					<li><a class="fancy-anchor" href="/posts">Posts</a></li>
-					<li><a class="fancy-anchor" href="/projects">Projects</a></li><!---->
-					<li><a class="fancy-anchor" href="/about">About</a></li>
-					<li><a class="fancy-anchor" href="/contact">Contact</a></li>
-				</ul>
-			</nav>
+			
+			@include('_partials.menu')
+			
 			<article>
 				<section>
 					@yield('content')
