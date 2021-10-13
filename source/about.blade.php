@@ -13,6 +13,7 @@
 		<h3>Project List:</h3>
 		<ul>
 			<li><a href="https://github.com/amalkong/css-filter">Css Filter Repo</a> - <a href="https://amalkong.github.io/css-filter/" target="_blank">demo</a></li>
+			<li><a href="https://github.com/amalkong/mashups/traversy_media_mashup/index.html">Traversy Mashups Repo</a> - <a href="https://amalkong.github.io/mashups/traversy_media_mashup/index.html" target="_blank">demo</a></li>
 		</ul>
 	</div>
     
