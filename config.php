@@ -23,7 +23,7 @@ return [
         'cmsVersion' => '~2.10',
         'analytics' => 'G-G9P2RYX3P9',
         'disqus' => 'artisanstatic',
-        'formcarry' => 'XXXXXXXXXXXX',
+        'formcarry' => 'yQWBFihZaJE',
         /* 'cloudinary' => [
             'cloudName' => 'artisanstatic',
             'apiKey' => '365895137117119',
