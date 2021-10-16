@@ -2,19 +2,13 @@
 
 @section('content')
     <h1>Welcome to Amalkong Development Showcase</h1>
-    <p>This is basically <a href="{{ $page->links->github }}">my github</a> demo site.</p>
+    <p>This is basically a site dedicated to showcasing <a href="{{ $page->links->github }}">my projects</a> hosted  on Github.</p>
 	
 	<h2>Technology Stack</h2>
-	<p>I work<small>(/experiment)</small> with a wide cross-section of web technology stacks from HTML, CSS and Javascript<small>(including React &amp; NodeJS)</small> on the front-end/clientside to PHP and NodeJS on the back-end/severside.</p>
-	<p></p>
-    <!--<p>This comes with code highlighting, share buttons, comments, analytics, an RSS feed, a contact form, a CMS and more.</p>
-    <p>The HTML, CSS and JavaScript in this template are extremely minimal, which makes the code easy to build on top of or replace completely.</p>
-    
-	<a href="https://ko-fi.com/Y8Y07ACJ" target="_blank" rel="noopener">
+	<p>I work and experiment with a wide cross-section of web technology stacks from HTML, CSS and Javascript on the front-end/clientside <small>(including Bootstrap, Tailwind CSS, JQuery, React &amp; NodeJS)</small> to PHP and NodeJS on the back-end/severside <small>(including Wordpress, Codeigniter, Laravel &amp; Express)</small>.</p>
+	
+	<p>To find out more about the projects, head over to the <a href="{{ $page->baseUrl }}/projects">projects page</a> or to view demos head over to the <a href="{{ $page->baseUrl }}/about">about page</a></p>
+    <!--<a href="https://ko-fi.com/Y8Y07ACJ" target="_blank" rel="noopener">
         <img src="{{ media('kofi-button.png') }}" alt="ko-fi" width="223" height="30">
-    </a>
-
-    <h2 id="test">Asset Compilation Test</h2>
-    <p>CSS test: <span class="test-css">text with blue border</span></p>
-    <p>JavaScript test: <a href="#test" class="test-js">click me</a></p>-->
+    </a>-->
 @endsection

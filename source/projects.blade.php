@@ -6,7 +6,7 @@
     <h1>Projects/Repos</h1>
 
     <ul>
-        @forelse ($projects->sortBy('title') as $project)
+        @forelse ($projects->sortBy('-date') as $project)
             <li>
                 <a href="{{ $project->getPath() }}">{{ $project->title }}</a>
                 <small>{{ $project->prettyDate() }}</small>

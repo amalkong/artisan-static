@@ -36,7 +36,7 @@ return [
     'collections' => [
         'posts' => [
             'path' => 'posts/{filename}',
-            'sort' => 'date',
+            'sort' => '-date',
             'extends' => '_layouts.post',
             'section' => 'postContent',
             'isPost' => true,
@@ -59,7 +59,7 @@ return [
         ],
         'projects' => [
             'path' => 'projects/{filename}',
-            'sort' => 'date',
+            'sort' => '-date',
             'extends' => '_layouts.project',
             'section' => 'projectContent',
             'isPost' => false,

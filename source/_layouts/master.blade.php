@@ -39,7 +39,7 @@
 			@include('_partials.menu')
 			
 			<article>
-				<section>
+				<section class="content-body">
 					@yield('content')
 				</section>
 			</article>
