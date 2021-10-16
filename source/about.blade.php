@@ -5,7 +5,7 @@
 @section('content')
     <h2>About</h2>
 
-    <p>Hey there, my name is <strong>{{ $page->owner->name }}</strong> and I am a web developer from the island of <strong>Jamaica</strong>. Been doing this a couple years now and I wouldn't say i'm an expert or nothing like that, but I can say confidently say that I know a thing or two.</p>
+    <p>Hey there, my name is <strong>{{ $page->owner->name }}</strong> and I am a web developer from the island of <strong>Jamaica</strong>. Been doing this a couple years now and I wouldn't say i'm an expert or nothing like that, but I say confidently say that I know a thing or two.</p>
     
     <p>Heres a list of some of <a href="https://github.com/amalkong" target="_blank">my projects</a> hosted on <a href="https://github.com" target="_blank">github</a>.</p>
     
